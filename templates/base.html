@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bosh sahifa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap5/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'static/css/base.css' %}">
+</head>
+<body>
+    <div class="container" >
+        <header>
+            <h1><a class="red" href="{% url 'home' %}"> Assalomu alekum! </a> </h1>
+        </header>
+        {% if user.is_authenticated %}
+        <h2><p class="xush">Xush kelibsiz, {{ user.username}}! </p></h2>
+            <p><a class="re" href="{% url 'logout' %}">Chiqib ketish</a></p>
+        {% else %}
+            <p>
+                <a class="re" href="{% url 'login' %}">Saytga kirish</a>
+            </p>
+        {% endif %}
+    <div>
+        {% block content%}
+        {% endblock content %}
+    </div>
+        <footer>
+            <h2><a class="re" href="{% url 'post_new' %}"> Yangi post yozish</a></h2>
+        </footer>
+    </div>
+</body>
+</html>
