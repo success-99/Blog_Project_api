@@ -36,7 +36,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.sites',
-    # 'allauth',
+    'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
@@ -50,14 +50,9 @@ INSTALLED_APPS = [
     # 'django.contrib.sites',
     # Tashqi modullar
     'rest_framework',
-
     'rest_framework.authtoken',
-
     'dj_rest_auth',
     'dj_rest_auth.registration',
-    # 'allauth',
-    # 'allauth.account,',
-    # Mahalliy modullar
     'blog',
     'accounts',
     'api',
