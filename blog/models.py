@@ -18,3 +18,10 @@ class Post(models.Model):
 
     def get_absolute_url(self):
         return reverse('post_detail', args=[str(self.pk)])
+
+
+# class Book(models.Model):
+#     name = models.CharField(max_length=100)
+#     isbn = models.IntegerField(max_length=16)
+#     description = models.TextField()
+#
