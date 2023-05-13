@@ -8,3 +8,4 @@ environs==9.5.0
 drf-yasg==1.21.4
 dj-rest-auth
 djangorestframework
+django-allauth
