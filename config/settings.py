@@ -11,11 +11,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
-from environs import Env
-
-# environs kutubxonasidan foydalanish
-env = Env()
-env.read_env()
 # .env fayl ichidan quyidagilarni o'qiymiz
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
