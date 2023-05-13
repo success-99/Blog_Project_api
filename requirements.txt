@@ -2,8 +2,6 @@ Django~=4.1.5
 dj-rest-auth==3.0.0
 Django==4.1.7
 django-allauth==0.52.0
-django-cleanup
-drf-yasg
 environs==9.5.0
 Jinja2==3.1.2
 Pillow==9.4.0
