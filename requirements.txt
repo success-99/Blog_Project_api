@@ -6,3 +6,5 @@ psycopg2-binary==2.9.6
 sqlparse==0.4.3
 environs==9.5.0
 drf-yasg==1.21.4
+dj-rest-auth
+djangorestframework
