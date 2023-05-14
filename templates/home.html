@@ -6,7 +6,7 @@
             <div class="card">
               <div class="card-body">
                 <h3 class="card-title post-entry" ><a href="{% url 'post_detail' post.pk %}">{{post.title}} </a></h3>
-                <p class="card-text stp"> class="card-text">{{ post.body | slice:":30" }}</p>
+                <p class="card-text stp"> {{ post.body | slice:":30" }}</p>
               </div>
             </div>
           </div>
