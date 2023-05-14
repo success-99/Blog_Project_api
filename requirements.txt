@@ -1,6 +1,8 @@
 asgiref
 dj-database-url==2.0.0
 Django
+urllib3
+charset_normalizer
 gunicorn==20.1.0
 psycopg2-binary==2.9.6
 sqlparse==0.4.3
