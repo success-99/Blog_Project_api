@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path, include, re_path
+from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -9,11 +9,11 @@ from rest_framework import permissions
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Snippets API",
+        title="Projectblog List API",
         default_version='v1',
-        description="Test description",
-        terms_of_service="https://www.google.com/policies/terms/",
-        contact=openapi.Contact(email="contact@snippets.local"),
+        description="Books library project",
+        terms_of_service="demo.com",
+        contact=openapi.Contact(email="abdusalomovshaxobiddin5@gmail.com"),
         license=openapi.License(name="BSD License"),
     ),
     public=True,
@@ -22,9 +22,11 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('swagger<format>.json|.yaml', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    path('doc/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+
+    # swagger
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+
     path('account/', include('django.contrib.auth.urls')),
     path('account/', include('accounts.urls')),
     path('', include('blog.urls')),
