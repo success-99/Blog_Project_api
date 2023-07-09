@@ -61,7 +61,7 @@ INSTALLED_APPS = [
 
 ]
 
-EMAIL_BACKEND = 'django.core.mali.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 SITE_ID = 1
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
