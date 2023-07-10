@@ -21,8 +21,8 @@ dj-rest-auth==3.0.0
 Django
 django-allauth==0.52.0
 django-cache-url==3.4.4
-django-ckeditor==6.5.1
-django-ckeditor-5==0.2.4
+django-ckeditor
+django-ckeditor-5
 django-cleanup==7.0.0
 django-environ==0.10.0
 django-environs==0.1.1
