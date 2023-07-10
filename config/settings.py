@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'dj_rest_auth',
     'dj_rest_auth.registration',
-    'whitenoise.runserver_nostatic'
+    'whitenoise.runserver_nostatic',
 
     # local app
     'blog',
